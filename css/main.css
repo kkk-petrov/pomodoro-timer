@@ -49,6 +49,8 @@ body{
     padding-top: 20px;
 }
 
+
+
 .timers{
     min-width: 400px;
     padding: 0px 20px;
@@ -72,12 +74,12 @@ body{
 .timers__content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
 .timer:not(:last-child){
-    /* margin-right: 50px; */
+    margin-right: 80px;
 
 }
 
@@ -189,11 +191,16 @@ body{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 468px) {
+    .wrapper{
+        max-width: 100vw;
+        max-height: 100vh;
+
+    }
     .pomodoro__container {
         max-width: 100vw;
+        max-height: 100vh;
         margin: 0 auto;
-        height: 100vh;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -205,6 +212,9 @@ body{
     }
     .timer__title{
         font-size: 15px;
+        flex-wrap: wrap;
+        padding: 3px 3px;
+        max-width: 300px;
     }
     .timers{
         max-width: 80vw;
